@@ -1,0 +1,27 @@
+:root{font-family:"Segoe UI",sans-serif;color:#292722;background:#eadcc7;font-size:13px}body,body>header,body>nav,aside,aside *{box-sizing:border-box}body{margin:0;height:100vh;display:flex;flex-direction:column;overflow:hidden}body>header{padding:14px 24px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #cbb89d;background:#faf7f0}body>header img{width:45px;height:45px}body>header strong{font-size:23px}body>header em{font-style:normal;color:#ff6d03}body>header small{display:block;color:#75634f;margin-top:3px}.header-right{margin-left:auto;text-align:right;display:flex;gap:15px;align-items:center}.badge{font-size:10px;letter-spacing:1px;border:1px solid #c9bba8;border-radius:20px;padding:6px 10px;color:#315e58}nav{display:flex;gap:6px;padding:9px 20px;background:#eee5d7;align-items:center;flex-wrap:wrap}button,select,input,textarea{font:inherit}button{border:1px solid #c6b395;border-radius:5px;background:#faf7f0;color:#292722;padding:7px 12px;cursor:pointer}button:hover{background:#f6d2aa}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #944018;outline-offset:2px}button:disabled{opacity:.5;cursor:default}.primary{background:#944018;color:white;border-color:#944018}.primary:hover{background:#753212}.spacer{flex:1}.rule{height:22px;width:1px;background:#c6b395;margin:0 5px}#banner{padding:8px 24px;font-size:12px;color:#5c5044;background:#f4ebde;border-top:1px solid #dbcbb5}.workspace{display:flex;flex:1;min-height:0}main{flex:1;overflow:auto;min-width:300px}aside{width:270px;flex-shrink:0;background:#faf7f0;border-left:1px solid #cbb89d;padding:20px;overflow:auto}aside h2{font-size:13px;margin:0 0 8px}aside h2:not(:first-child){margin-top:24px}aside p{font-size:12px;line-height:1.5;color:#75634f}aside textarea{width:100%;height:105px;resize:vertical;padding:8px;border:1px solid #cbb89d;background:white;color:#292722;border-radius:4px}aside label{display:block;margin:10px 0;font-size:12px;color:#75634f}aside input{width:100%;margin-top:5px;padding:6px;border:1px solid #cbb89d;border-radius:4px;background:white}aside input[type=color]{height:30px;padding:2px}.toggles{display:flex;gap:6px}.toggles button.active{background:#174e50;color:white}#changes{font-size:12px;line-height:1.7;white-space:pre-line}details{margin-top:20px;color:#75634f;font-size:12px}details summary{cursor:pointer}body>footer{display:flex;justify-content:space-between;padding:8px 22px;background:#292722;color:#fff7eb;font-size:11px}#render .docx-wrapper{background:transparent;padding:28px;min-height:100%}#render section.docx{box-shadow:0 5px 24px #39332626;margin-bottom:24px}#render [data-joeos-id]{outline-offset:2px}#render [data-joeos-id][contenteditable="plaintext-only"]:hover{outline:1px dashed #b98b62}#render [data-joeos-id]:focus{outline:2px solid #c9824e;min-width:5px}#render [data-joeos-id].selected{background:#ff6d0314}#render [data-joeos-id][contenteditable="plaintext-only"]:empty{display:inline-block;min-width:8px;min-height:1em}#render [data-joeos-id][contenteditable="plaintext-only"]{white-space:pre-wrap}#render a{cursor:default}body.busy #render{opacity:.6;pointer-events:none}@media(max-width:950px){aside{width:235px}body>header small{display:none}body>footer span:last-child{display:none}}
+
+#render [data-joeos-id][contenteditable="plaintext-only"]:empty::before{content:"Start typing";color:#a3937e;font-style:italic;pointer-events:none}
+
+#render [data-joeos-id]{font-family:inherit!important;font-size:inherit!important;font-weight:inherit!important;font-style:inherit!important;font-variant:inherit!important;line-height:inherit!important;color:inherit!important;letter-spacing:inherit!important;text-transform:inherit!important;}
+
+aside input[type=checkbox]{width:auto;margin-right:5px}#pageMeasurements{font-size:12px;line-height:1.6;white-space:pre-line}.margin-guides #render section.docx::after{content:"";position:absolute;pointer-events:none;z-index:10;top:var(--joeos-margin-top);height:calc(var(--joeos-page-height) - var(--joeos-margin-top) - var(--joeos-margin-bottom));left:var(--joeos-margin-left);right:var(--joeos-margin-right);border:1px dashed #21827e80}body.busy aside{pointer-events:none;opacity:.6}
+
+aside select{width:100%;margin-top:5px;padding:6px;border:1px solid #cbb89d;border-radius:4px;background:white;color:#292722}
+
+/* Inline DrawingML occupies its declared box, without an inner text baseline. */
+#render [data-joeos-inline-image]{line-height:0}
+#render [data-joeos-inline-image]>img{display:block}
+
+/* One continuous writing surface. Only native selections are highlighted. */
+#render{outline:none;caret-color:#222;cursor:text}
+#render [data-joeos-id]:hover,#render [data-joeos-id]:focus{outline:none!important;background:transparent!important}
+#render [data-joeos-id].selected{background:transparent}
+#render [data-joeos-id]:empty{display:inline-block;min-width:1px;min-height:1em}
+#render [data-joeos-id]:empty::before{content:"\200b";pointer-events:none}
+#render [data-joeos-id]{white-space:pre-wrap}
+#render::selection,#render *::selection{background:#b5d7f4;color:inherit}
+
+/* Empty bookkeeping spans must not introduce phantom word stops. */
+#render [data-joeos-id]:empty{display:inline;min-width:0;min-height:0}
+#render [data-joeos-id]:empty::before{content:none}
+#render .joeos-empty-line [data-joeos-id]:empty:first-of-type{display:inline-block;min-width:1px;min-height:1em}

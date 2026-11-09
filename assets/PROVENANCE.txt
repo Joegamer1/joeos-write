@@ -1,0 +1,3 @@
+JoeOS branding: project artwork. M2-master.svg preserves the approved flame geometry.
+Official orange: #FF6D03. Preserve aspect ratio and clear space.
+No third-party font binaries are included.
